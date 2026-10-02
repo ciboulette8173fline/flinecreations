@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie d'Art — Créations par Fline</title>
+  <meta name="description" content="Œuvres originales et uniques par Fline : tableaux, illustrations et créations pour apaiser votre quotidien.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { creme:'#FAF6EF', beige:'#EFE6D6', sauge:'#A8B9A0', saugefonce:'#5F7A5C', ciel:'#C9DADC', or:'#D9A441', orfonce:'#B9852A', encre:'#3B4237' },
+      fontFamily: { titre:['Playfair Display','serif'], corps:['Nunito','sans-serif'] }
+    }}}
+  </script>
+</head>
+<body class="bg-creme text-encre font-corps antialiased">
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur border-b border-beige">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-titre text-2xl text-saugefonce">Flinecréations</a>
+      <button id="burger" class="md:hidden p-2" aria-label="Ouvrir le menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-saugefonce">Accueil</a></li>
+        <li><a href="ebooks.html" class="hover:text-saugefonce">E-books</a></li>
+        <li><a href="oeuvres.html" class="text-saugefonce border-b-2 border-or pb-1">Œuvres par Fline</a></li>
+      </ul>
+    </nav>
+    <ul id="menuMobile" class="hidden md:hidden px-5 pb-4 space-y-3 font-semibold">
+      <li><a href="index.html" class="block">Accueil</a></li>
+      <li><a href="ebooks.html" class="block">E-books</a></li>
+      <li><a href="oeuvres.html" class="block text-saugefonce">Œuvres par Fline</a></li>
+    </ul>
+  </header>
+
+  <!-- ========== TITRE & NOTE D'INTENTION ========== -->
+  <section class="bg-gradient-to-b from-or/15 to-creme">
+    <div class="max-w-3xl mx-auto px-5 py-16 md:py-24 text-center">
+      <h1 class="font-titre text-4xl md:text-5xl text-saugefonce">Galerie d'Art — Créations par Fline</h1>
+      <!-- ✏️ PERSONNALISEZ : votre note d'intention artistique -->
+      <p class="mt-6 text-lg text-encre/80 leading-relaxed">
+        Chaque création naît d'un geste libre et sincère, guidé par la recherche de beauté et d'apaisement.
+        Mes œuvres sont pensées comme de petites bulles de calme à accrocher chez soi : des couleurs douces,
+        des formes organiques, des textures à regarder longtemps.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== GRILLE D'ŒUVRES ========== -->
+  <!-- 💡 Pour ajouter une œuvre : copiez-collez un bloc <article>. Pour la retirer : supprimez le bloc.
+       Une pièce unique vendue ? Remplacez le lien PayPal par la mention "Vendue" (voir le modèle en bas de ce commentaire) :
+       <span class="mt-3 block w-full py-3 rounded-full bg-beige text-center font-bold text-encre/60">Œuvre vendue</span> -->
+  <section class="max-w-6xl mx-auto px-5 pb-20">
+    <div class="grid sm:grid-cols-2 gap-8">
+
+      <!-- ===== ŒUVRE 1 ===== -->
+      <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+        <!-- 🖼️ Remplacez par la photo : <img src="oeuvre-1.jpg" alt="Titre de l'œuvre" class="w-full h-80 object-cover"> -->
+        <div class="h-80 bg-gradient-to-br from-sauge/60 to-ciel flex items-center justify-center">
+          <span class="text-white/80 font-titre text-xl">Visuel de l'œuvre</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <!-- ✏️ Titre, technique, dimensions, prix : à modifier -->
+          <h2 class="font-titre text-2xl text-saugefonce">Souffle d'Automne</h2>
+          <p class="mt-1 text-sm text-encre/70">Technique mixte sur toile · 40 × 50 cm · Pièce unique</p>
+          <p class="mt-3 text-encre/80">Des camaïeux de sauge et d'ocre pour une respiration visuelle, comme une promenade lente en forêt.</p>
+          <p class="mt-3 text-sm flex gap-2"><span class="text-or">✦</span> Certificat d'authenticité inclus</p>
+          <div class="mt-auto pt-6">
+            <p class="text-3xl font-titre">120 €</p>
+            <!-- 💳 REMPLACEZ VOTRE_LIEN_PAYPAL_ICI par votre lien PayPal -->
+            <a href="VOTRE_LIEN_PAYPAL_ICI" target="_blank" rel="noopener"
+               class="mt-3 flex items-center justify-center w-full py-3 rounded-full bg-or hover:bg-orfonce text-white font-bold shadow transition">
+              Acquérir cette œuvre via PayPal
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== ŒUVRE 2 ===== -->
+      <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+        <div class="h-80 bg-gradient-to-br from-or/40 to-beige flex items-center justify-center">
+          <span class="text-white/80 font-titre text-xl">Visuel de l'œuvre</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h2 class="font-titre text-2xl text-saugefonce">Lueur Douce</h2>
+          <p class="mt-1 text-sm text-encre/70">Aquarelle et encre sur papier · 30 × 40 cm · Pièce unique</p>
+          <p class="mt-3 text-encre/80">Des aplats lumineux et des traits légers, évoquant la lumière du matin à travers un voilage.</p>
+          <p class="mt-3 text-sm flex gap-2"><span class="text-or">✦</span> Certificat d'authenticité inclus</p>
+          <div class="mt-auto pt-6">
+            <p class="text-3xl font-titre">85 €</p>
+            <a href="VOTRE_LIEN_PAYPAL_ICI" target="_blank" rel="noopener"
+               class="mt-3 flex items-center justify-center w-full py-3 rounded-full bg-or hover:bg-orfonce text-white font-bold shadow transition">
+              Acquérir cette œuvre via PayPal
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== ŒUVRE 3 ===== -->
+      <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+        <div class="h-80 bg-gradient-to-br from-ciel to-sauge/50 flex items-center justify-center">
+          <span class="text-white/80 font-titre text-xl">Visuel de l'œuvre</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h2 class="font-titre text-2xl text-saugefonce">Vagues Intérieures</h2>
+          <p class="mt-1 text-sm text-encre/70">Sérigraphie, tirage limité à 30 ex. · 50 × 70 cm</p>
+          <p class="mt-3 text-encre/80">Un motif de vagues répétées, inspiré des gribouillages de respiration : un rythme calme à garder sous les yeux.</p>
+          <p class="mt-3 text-sm flex gap-2"><span class="text-or">✦</span> Numérotée et signée · Certificat inclus</p>
+          <div class="mt-auto pt-6">
+            <p class="text-3xl font-titre">95 €</p>
+            <a href="VOTRE_LIEN_PAYPAL_ICI" target="_blank" rel="noopener"
+               class="mt-3 flex items-center justify-center w-full py-3 rounded-full bg-or hover:bg-orfonce text-white font-bold shadow transition">
+              Acquérir cette œuvre via PayPal
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== ŒUVRE 4 ===== -->
+      <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+        <div class="h-80 bg-gradient-to-br from-beige to-or/40 flex items-center justify-center">
+          <span class="text-white/80 font-titre text-xl">Visuel de l'œuvre</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h2 class="font-titre text-2xl text-saugefonce">Jardin de Mandalas</h2>
+          <p class="mt-1 text-sm text-encre/70">Illustration encre et gouache · A4 (21 × 29,7 cm) · Pièce unique</p>
+          <p class="mt-3 text-encre/80">Une floraison de cercles et de pétales dessinés lentement, un à un, pour méditer par le regard.</p>
+          <p class="mt-3 text-sm flex gap-2"><span class="text-or">✦</span> Certificat d'authenticité inclus</p>
+          <div class="mt-auto pt-6">
+            <p class="text-3xl font-titre">60 €</p>
+            <a href="VOTRE_LIEN_PAYPAL_ICI" target="_blank" rel="noopener"
+               class="mt-3 flex items-center justify-center w-full py-3 rounded-full bg-or hover:bg-orfonce text-white font-bold shadow transition">
+              Acquérir cette œuvre via PayPal
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== RÉASSURANCE ========== -->
+  <section class="bg-beige/60">
+    <div class="max-w-5xl mx-auto px-5 py-16 grid md:grid-cols-3 gap-8 text-center">
+      <!-- ✏️ Adaptez ces engagements à votre réalité (délais, transporteur, retours) -->
+      <div>
+        <p class="text-3xl">📦</p>
+        <h3 class="mt-2 font-titre text-xl text-saugefonce">Emballage soigné</h3>
+        <p class="mt-2 text-sm text-encre/80">Chaque œuvre est protégée avec soin pour arriver intacte chez vous.</p>
+      </div>
+      <div>
+        <p class="text-3xl">🚚</p>
+        <h3 class="mt-2 font-titre text-xl text-saugefonce">Livraison sécurisée</h3>
+        <p class="mt-2 text-sm text-encre/80">Expédition suivie. Frais et délais précisés avant la validation de la commande.</p>
+      </div>
+      <div>
+        <p class="text-3xl">🔒</p>
+        <h3 class="mt-2 font-titre text-xl text-saugefonce">Paiement par PayPal</h3>
+        <p class="mt-2 text-sm text-encre/80">Règlement sécurisé : vos données bancaires ne me sont jamais transmises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-saugefonce text-creme">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 justify-between text-sm">
+      <div>
+        <p class="font-titre text-xl">Bulle de Calme</p>
+        <p class="mt-1 opacity-80">© 2026 Bulle de Calme — Fline. Tous droits réservés.</p>
+      </div>
+      <ul class="flex flex-wrap gap-5">
+        <li><a href="mentions-legales.html" class="hover:underline">Mentions légales</a></li>
+        <li><a href="mentions-legales.html" class="hover:underline">CGV</a></li>
+        <li><a href="mailto:contact@votre-domaine.fr" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () =>
+      document.getElementById('menuMobile').classList.toggle('hidden'));
+  </script>
+</body>
+</html>

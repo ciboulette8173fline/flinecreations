@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales & CGV — Bulle de Calme</title>
+  <meta name="robots" content="noindex">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { creme:'#FAF6EF', beige:'#EFE6D6', sauge:'#A8B9A0', saugefonce:'#5F7A5C', ciel:'#C9DADC', or:'#D9A441', orfonce:'#B9852A', encre:'#3B4237' },
+      fontFamily: { titre:['Playfair Display','serif'], corps:['Nunito','sans-serif'] }
+    }}}
+  </script>
+</head>
+<body class="bg-creme text-encre font-corps antialiased">
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur border-b border-beige">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-titre text-2xl text-saugefonce">Flinecréations</a>
+      <button id="burger" class="md:hidden p-2" aria-label="Ouvrir le menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-saugefonce">Accueil</a></li>
+        <li><a href="ebooks.html" class="hover:text-saugefonce">E-books</a></li>
+        <li><a href="oeuvres.html" class="hover:text-saugefonce">Œuvres par Fline</a></li>
+      </ul>
+    </nav>
+    <ul id="menuMobile" class="hidden md:hidden px-5 pb-4 space-y-3 font-semibold">
+      <li><a href="index.html" class="block">Accueil</a></li>
+      <li><a href="ebooks.html" class="block">E-books</a></li>
+      <li><a href="oeuvres.html" class="block">Œuvres par Fline</a></li>
+    </ul>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-5 py-14">
+    <h1 class="font-titre text-4xl text-saugefonce">Mentions légales & CGV</h1>
+    <p class="mt-3 text-sm text-encre/70">Dernière mise à jour : 1er octobre 2026</p>
+
+    <!-- ⚠️ À COMPLÉTER : remplacez tous les textes [ENTRE CROCHETS] par vos vraies informations avant la mise en ligne. -->
+
+    <nav class="mt-6 flex flex-wrap gap-4 text-sm font-semibold">
+      <a href="#mentions" class="text-saugefonce underline">Mentions légales</a>
+      <a href="#cgv" class="text-saugefonce underline">Conditions générales de vente</a>
+      <a href="#donnees" class="text-saugefonce underline">Données personnelles</a>
+    </nav>
+
+    <!-- ========== MENTIONS LÉGALES ========== -->
+    <section id="mentions" class="mt-12 space-y-6 leading-relaxed">
+      <h2 class="font-titre text-2xl text-saugefonce">Mentions légales</h2>
+
+      <div>
+        <h3 class="font-bold">Éditeur du site</h3>
+        <p class="text-encre/85">
+          Bulle de Calme, exploité par [VOTRE NOM ET PRÉNOM], artiste sous le nom de Fline.<br>
+          Statut : [Micro-entrepreneur / Entreprise individuelle / autre]<br>
+          SIRET : [VOTRE NUMÉRO SIRET]<br>
+          Adresse : [VOTRE ADRESSE POSTALE]<br>
+          E-mail : <a href="mailto:contact@votre-domaine.fr" class="underline">contact@votre-domaine.fr</a><br>
+          TVA : [« TVA non applicable, art. 293 B du CGI » si vous êtes en franchise en base, sinon votre numéro de TVA]
+        </p>
+        <p class="text-sm text-encre/60 mt-1">Directrice de la publication : [VOTRE NOM ET PRÉNOM].</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Hébergement</h3>
+        <p class="text-encre/85">
+          Le site est hébergé par Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis.
+          Site : <a href="https://www.netlify.com" class="underline" target="_blank" rel="noopener">netlify.com</a>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">Propriété intellectuelle</h3>
+        <p class="text-encre/85">
+          L'ensemble des contenus de ce site (textes, e-books, illustrations, photographies, œuvres, logo) est protégé par le droit d'auteur
+          et reste la propriété exclusive de Bulle de Calme / Fline. Toute reproduction, représentation, diffusion ou revente, totale ou partielle,
+          sans autorisation écrite préalable est interdite.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CGV ========== -->
+    <section id="cgv" class="mt-14 space-y-6 leading-relaxed">
+      <h2 class="font-titre text-2xl text-saugefonce">Conditions générales de vente</h2>
+
+      <div>
+        <h3 class="font-bold">1. Objet</h3>
+        <p class="text-encre/85">Les présentes conditions régissent les ventes d'e-books (produits numériques) et d'œuvres d'art (produits physiques) proposées sur ce site par Bulle de Calme.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">2. Prix et paiement</h3>
+        <p class="text-encre/85">Les prix sont indiqués en euros, toutes taxes comprises [adaptez selon votre régime de TVA]. Le règlement s'effectue en ligne via PayPal, qui sécurise la transaction. Bulle de Calme n'a pas accès à vos données bancaires.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">3. E-books : livraison et droit de rétractation</h3>
+        <p class="text-encre/85">
+          Les e-books sont livrés sous forme de fichier numérique, [par e-mail / par lien de téléchargement] après confirmation du paiement.
+          Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux contenus numériques fournis
+          sans support matériel dont l'exécution a commencé avec l'accord du client. En validant votre commande, vous acceptez le téléchargement immédiat
+          et renoncez à votre droit de rétractation.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">4. Œuvres d'art : livraison</h3>
+        <p class="text-encre/85">
+          Les œuvres sont expédiées sous [X] jours ouvrés après réception du paiement, dans un emballage protecteur, avec un numéro de suivi.
+          Les frais de livraison, précisés avant la validation de la commande, sont de [MONTANT / « offerts »]. Chaque œuvre unique est accompagnée d'un certificat d'authenticité.
+          Les couleurs peuvent légèrement varier selon les écrans.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">5. Œuvres d'art : droit de rétractation</h3>
+        <p class="text-encre/85">
+          Vous disposez de 14 jours à compter de la réception pour vous rétracter, sans avoir à justifier de motif, en écrivant à
+          <a href="mailto:contact@votre-domaine.fr" class="underline">contact@votre-domaine.fr</a>. L'œuvre doit être renvoyée dans son emballage
+          et en parfait état, les frais de retour étant à la charge de l'acheteur [adaptez]. Le remboursement intervient sous 14 jours après réception du retour.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold">6. Garantie légale et litiges</h3>
+        <p class="text-encre/85">
+          Les produits bénéficient de la garantie légale de conformité et de la garantie des vices cachés. En cas de litige, vous pouvez contacter le vendeur
+          pour rechercher une solution amiable, puis recourir gratuitement à un médiateur de la consommation : [NOM ET COORDONNÉES DE VOTRE MÉDIATEUR].
+          Le droit français s'applique.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== DONNÉES PERSONNELLES ========== -->
+    <section id="donnees" class="mt-14 space-y-4 leading-relaxed">
+      <h2 class="font-titre text-2xl text-saugefonce">Données personnelles</h2>
+      <p class="text-encre/85">
+        Les informations nécessaires au traitement de votre commande (nom, adresse de livraison, e-mail) sont utilisées uniquement pour gérer celle-ci
+        et vous contacter à son sujet. Elles ne sont ni vendues ni cédées à des tiers, hormis les prestataires indispensables (PayPal, transporteur).
+        Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données :
+        <a href="mailto:contact@votre-domaine.fr" class="underline">contact@votre-domaine.fr</a>.
+      </p>
+      <p class="text-encre/85">
+        Ce site n'utilise pas de cookies de suivi publicitaire. [Adaptez ce paragraphe si vous ajoutez un outil d'analyse de fréquentation.]
+      </p>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-saugefonce text-creme">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 justify-between text-sm">
+      <div>
+        <p class="font-titre text-xl">Bulle de Calme</p>
+        <p class="mt-1 opacity-80">© 2026 Bulle de Calme — Fline. Tous droits réservés.</p>
+      </div>
+      <ul class="flex flex-wrap gap-5">
+        <li><a href="mentions-legales.html" class="hover:underline">Mentions légales</a></li>
+        <li><a href="mentions-legales.html#cgv" class="hover:underline">CGV</a></li>
+        <li><a href="mailto:contact@votre-domaine.fr" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () =>
+      document.getElementById('menuMobile').classList.toggle('hidden'));
+  </script>
+</body>
+</html>
