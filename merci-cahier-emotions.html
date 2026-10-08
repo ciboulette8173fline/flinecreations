@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merci pour votre achat — Flinecréations</title>
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { creme:'#FAF6EF', beige:'#EFE6D6', sauge:'#A8B9A0', saugefonce:'#5F7A5C', ciel:'#C9DADC', or:'#D9A441', orfonce:'#B9852A', encre:'#3B4237' },
+      fontFamily: { titre:['Playfair Display','serif'], corps:['Nunito','sans-serif'] }
+    }}}
+  </script>
+</head>
+<body class="bg-creme text-encre font-corps antialiased">
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="sticky top-0 z-50 bg-creme/90 backdrop-blur border-b border-beige">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-titre text-2xl text-saugefonce">Flinecréations</a>
+      <button id="burger" class="md:hidden p-2" aria-label="Ouvrir le menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-saugefonce">Accueil</a></li>
+        <li><a href="ebooks.html" class="hover:text-saugefonce">E-books</a></li>
+        <li><a href="oeuvres.html" class="hover:text-saugefonce">Œuvres par Fline</a></li>
+      </ul>
+    </nav>
+    <ul id="menuMobile" class="hidden md:hidden px-5 pb-4 space-y-3 font-semibold">
+      <li><a href="index.html" class="block">Accueil</a></li>
+      <li><a href="ebooks.html" class="block">E-books</a></li>
+      <li><a href="oeuvres.html" class="block">Œuvres par Fline</a></li>
+    </ul>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-5 py-20 text-center">
+    <p class="text-5xl">🌿</p>
+    <h1 class="mt-4 font-titre text-4xl text-saugefonce">Merci pour votre achat !</h1>
+    <p class="mt-5 text-lg text-encre/80">Votre paiement PayPal est bien reçu. Voici votre e-book, à télécharger dès maintenant.</p>
+    <div class="mt-10 bg-white rounded-3xl shadow-md p-8">
+      <h2 class="font-titre text-2xl text-saugefonce">Le Cahier des Émotions en Couleurs</h2>
+      <p class="mt-2 text-sm text-encre/70">PDF · format A4</p>
+      <a href="telechargements/cahier-emotions-en-couleurs-m4t8w3.pdf" download
+         class="mt-6 inline-block px-8 py-3 rounded-full bg-or hover:bg-orfonce text-white font-bold shadow transition">Télécharger mon e-book (PDF)</a>
+      <p class="mt-4 text-xs text-encre/60">Patientez quelques instants si le téléchargement est long. Conservez-le sur votre appareil.</p>
+    </div>
+    <p class="mt-8 text-sm text-encre/70">Un souci de téléchargement ? Écrivez-moi : <a href="mailto:ciboulette8173@gmail.com" class="underline">ciboulette8173@gmail.com</a>. Usage strictement personnel, merci de ne pas partager le fichier.</p>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-saugefonce text-creme">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 justify-between text-sm">
+      <div>
+        <p class="font-titre text-xl">Bulle de Calme</p>
+        <p class="mt-1 opacity-80">© 2026 Bulle de Calme — Fline. Tous droits réservés.</p>
+      </div>
+      <ul class="flex flex-wrap gap-5">
+        <li><a href="mentions-legales.html" class="hover:underline">Mentions légales</a></li>
+        <li><a href="mentions-legales.html#cgv" class="hover:underline">CGV</a></li>
+        <li><a href="mailto:ciboulette8173@gmail.com" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('burger').addEventListener('click', () =>
+      document.getElementById('menuMobile').classList.toggle('hidden'));
+  </script>
+</body>
+</html>
